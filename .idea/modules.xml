@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/Yesterdaze.iml" filepath="$PROJECT_DIR$/Yesterdaze.iml" />
+=======
       <module fileurl="file://$PROJECT_DIR$/FBTechnicolorHackathon.iml" filepath="$PROJECT_DIR$/FBTechnicolorHackathon.iml" />
+>>>>>>> aa2b26f3c8b1525d766e807dfb7f38584b8f61d4
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+>>>>>>> aa2b26f3c8b1525d766e807dfb7f38584b8f61d4
     </modules>
   </component>
 </project>
