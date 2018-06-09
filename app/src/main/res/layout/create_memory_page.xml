@@ -17,7 +17,7 @@
         android:text="Date:" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/memoryDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,7 +34,7 @@
         android:text="What made you happy today? " />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/memoryText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -52,7 +52,7 @@
         android:text="Rate this memory:" />
 
     <RatingBar
-        android:id="@+id/ratingBar"
+        android:id="@+id/memoryRating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numStars="5" />
@@ -62,7 +62,7 @@
         android:layout_height="119dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/nextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next" />

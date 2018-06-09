@@ -8,16 +8,16 @@ import java.util.Date;
 
 public class Memory {
     String text;
-    Date date;
+    String date;
     int rating;
 
     public Memory() {
         this.text = "";
-        this.date = new Date();
+        this.date = "";
         this.rating = 10;
     }
 
-    public Memory(String text, Date date, int rating) {
+    public Memory(String text, String date, int rating) {
         this.text = text;
         this.date = date;
         this.rating = rating;
@@ -31,11 +31,11 @@ public class Memory {
         this.text = text;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
