@@ -6,21 +6,21 @@
     android:gravity="center">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/date_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Remember this?" />
+        android:text="On (date)..."
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/memory_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your memory" />
+        android:text="Your memory"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginTop="30sp"/>
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Back to Home" />
 
 </LinearLayout>
