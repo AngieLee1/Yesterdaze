@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FBTechnicolorHackathon.iml" filepath="$PROJECT_DIR$/FBTechnicolorHackathon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Yesterdaze.iml" filepath="$PROJECT_DIR$/Yesterdaze.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
