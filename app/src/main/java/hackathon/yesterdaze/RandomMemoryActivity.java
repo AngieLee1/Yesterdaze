@@ -28,6 +28,8 @@ public class RandomMemoryActivity extends AppCompatActivity {
 
         // mem = [from firebase]
 
+        // https://yesterdaze-657f2.firebaseio.com/
+
 
 //        dateTextView.setText(mem.getDate());
 //        memoryTextView.setText(mem.getText());

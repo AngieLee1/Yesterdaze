@@ -17,6 +17,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+//import com.google.firebase.database.DatabaseReference;
 
 /**
  * Created by angielee on 6/9/18.
@@ -76,8 +80,15 @@ public class CreateMemoryActivity extends AppCompatActivity {
 
 
 //    public void addToDatabase(String memId, Memory newMem) {
-//        mDatabase = FirebaseDatabase.getInstance().getReference();
-//        mDatabase.child("memories").child(memId).setValue(newMem);
+//        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        DatabaseReference ref = database.getReference("Memory/");
+//
+//        DatabaseReference memoriesRef = ref.child("");
+//
+//        Map<String, Memory> memories = new HashMap<>();
+//        users.put(memId, newMem);
+//
+//        usersRef.setValueAsync(memories);
 //    }
 
 
