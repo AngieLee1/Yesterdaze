@@ -5,7 +5,7 @@
     android:gravity="center">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Welcome, "
@@ -14,14 +14,14 @@
         android:textStyle="bold"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/create_mem_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="create memory"
         android:layout_marginTop="50sp"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/show_mem_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="remind"
