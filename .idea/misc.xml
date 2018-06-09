@@ -40,7 +40,11 @@
     </option>
 <<<<<<< HEAD
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+=======
+  <component name="ProjectRootManager">
+>>>>>>> e5160c53e9b5956ffb71fb379b4b0d6db09fdaa6
 =======
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
