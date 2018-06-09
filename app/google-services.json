@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "125488317469",
+    "firebase_url": "https://yesterdaze-657f2.firebaseio.com",
+    "project_id": "yesterdaze-657f2",
+    "storage_bucket": "yesterdaze-657f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125488317469:android:a286435709f6234a",
+        "android_client_info": {
+          "package_name": "hackathon.yesterdaze"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125488317469-7d21r2e7gtdh1v9p06ruo183a1chkreo.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "125488317469-7d21r2e7gtdh1v9p06ruo183a1chkreo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9NVkqMiWLI16kNRg-k5Uq8FdeiqB2Ffs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
