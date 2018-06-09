@@ -1,5 +1,6 @@
 package hackathon.yesterdaze;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.Rating;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -22,14 +24,14 @@ import java.util.Date;
 
 public class CreateMemoryActivity extends AppCompatActivity {
 
-    TextView memText;
-    EditText memDate;
-    RatingBar memRating;
-    Button nextButton;
+    private TextView memText;
+    private EditText memDate;
+    private RatingBar memRating;
+    private Button addButton;
 
-    Date myDate;
+    private Date myDate;
 
-
+    //private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +39,9 @@ public class CreateMemoryActivity extends AppCompatActivity {
         setContentView(R.layout.create_memory_page);
 
 
-        nextButton = (Button) findViewById(R.id.nextButton);
+        addButton = (Button) findViewById(R.id.addButton);
 
-        nextButton.setOnClickListener(new View.OnClickListener() {
+        addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -60,6 +62,12 @@ public class CreateMemoryActivity extends AppCompatActivity {
 
                 Memory newMem = new Memory(memoryText, dateStr, memoryRating);
 
+
+                //addToDatabase();
+
+
+                showSuccessMsg();
+
                 goToMainPage();
             }
         });
@@ -67,8 +75,27 @@ public class CreateMemoryActivity extends AppCompatActivity {
     }
 
 
+//    public void addToDatabase(String memId, Memory newMem) {
+//        mDatabase = FirebaseDatabase.getInstance().getReference();
+//        mDatabase.child("memories").child(memId).setValue(newMem);
+//    }
+
+
     /**
-     * Switch to the CreateMemoryActivity
+     * Show success message
+     */
+    public void showSuccessMsg() {
+        Context context = getApplicationContext();
+        CharSequence text = "Successfully recorded memory! :)";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
+
+
+    /**
+     * Go back to home page
      */
     public void goToMainPage() {
         Intent createMemIntent = new Intent(CreateMemoryActivity.this, MainActivity.class);

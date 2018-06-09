@@ -29,8 +29,8 @@ public class RandomMemoryActivity extends AppCompatActivity {
         // mem = [from firebase]
 
 
-        dateTextView.setText(mem.getDate());
-        memoryTextView.setText(mem.getText());
+//        dateTextView.setText(mem.getDate());
+//        memoryTextView.setText(mem.getText());
     }
 
 }
