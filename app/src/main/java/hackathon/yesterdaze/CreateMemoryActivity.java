@@ -13,6 +13,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -42,35 +43,38 @@ public class CreateMemoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.create_memory_page);
 
+        memText = (TextView) findViewById(R.id.memoryText);
+        memDate = (EditText) findViewById(R.id.memoryDate);
+        memRating = (RatingBar) findViewById(R.id.memoryRating);
 
-        addButton = (Button) findViewById(R.id.addButton);
+        addButton = (Button)findViewById(R.id.addButton);
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                memText = (TextView) findViewById(R.id.memoryText);
-                memDate = (EditText) findViewById(R.id.memoryDate);
-                memRating = (RatingBar) findViewById(R.id.memoryRating);
-
                 String memoryText = memText.getText().toString();
+//
+//                Calendar c = Calendar.getInstance();
+//                c.setTime(myDate);
+//                int day = c.get(Calendar.DAY_OF_MONTH);
+//                int month = c.get(Calendar.MONTH);
+//                int year = c.get(Calendar.YEAR);
+//                String dateStr = day + "-" + month + "-" + year;
 
-                Calendar c = Calendar.getInstance();
-                c.setTime(myDate);
-                int day = c.get(Calendar.DAY_OF_MONTH);
-                int month = c.get(Calendar.MONTH);
-                int year = c.get(Calendar.YEAR);
-                String dateStr = day + "-" + month + "-" + year;
+                //int memoryRating = memRating.getNumStars();
 
-                int memoryRating = memRating.getNumStars();
+                String datevalue = memDate.getText().toString();
 
-                Memory newMem = new Memory(memoryText, dateStr, memoryRating);
+                int memoryRating = 4;
+
+                Memory newMem = new Memory(memoryText, datevalue, memoryRating);
 
 
                 //addToDatabase();
 
 
-                showSuccessMsg();
+                //showSuccessMsg();
 
                 goToMainPage();
             }

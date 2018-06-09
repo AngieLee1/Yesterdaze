@@ -55,7 +55,7 @@
         android:id="@+id/memoryRating"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:numStars="5" />
+        android:numStars="8" />
 
     <Space
         android:layout_width="match_parent"
@@ -65,6 +65,6 @@
         android:id="@+id/addButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Next" />
+        android:text="Add Memory" />
 
 </LinearLayout>
