@@ -81,7 +81,9 @@ public class CreateMemoryActivity extends AppCompatActivity {
     }
 
 
-//    public void addToDatabase(String memId, Memory newMem) {
+    public void addToDatabase(String memId, Memory newMem) {
+//        private DatabaseReference mDatabase;
+//        mDatabase = FirebaseDatabase.getInstance().getReference();
 //        final FirebaseDatabase database = FirebaseDatabase.getInstance();
 //        DatabaseReference ref = database.getReference("Memory/");
 //
@@ -91,7 +93,7 @@ public class CreateMemoryActivity extends AppCompatActivity {
 //        users.put(memId, newMem);
 //
 //        usersRef.setValueAsync(memories);
-//    }
+    }
 
 
     /**
