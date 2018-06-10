@@ -87,7 +87,7 @@ public class CreateMemoryActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("Memories");
 
-        myRef.setValue(newMem);
+        myRef.push().setValue(newMem);
 
 //        private DatabaseReference mDatabase;
 //        mDatabase = FirebaseDatabase.getInstance().getReference();
