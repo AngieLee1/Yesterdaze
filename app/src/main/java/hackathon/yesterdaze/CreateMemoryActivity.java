@@ -99,7 +99,7 @@ public class CreateMemoryActivity extends AppCompatActivity {
      */
     public void showSuccessMsg() {
         Context context = getApplicationContext();
-        CharSequence text = "Successfully recorded memory! :)";
+        CharSequence text = "Successfully recorded! :)";
         int duration = Toast.LENGTH_SHORT;
 
         Toast toast = Toast.makeText(context, text, duration);
