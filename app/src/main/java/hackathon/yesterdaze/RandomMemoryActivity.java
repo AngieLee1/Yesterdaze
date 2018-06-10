@@ -6,6 +6,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+
 import java.util.Random;
 
 /**
@@ -16,6 +24,8 @@ public class RandomMemoryActivity extends AppCompatActivity {
 
     private TextView dateTextView;
     private TextView memoryTextView;
+    private ArrayList<Memory> memList = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,13 +36,29 @@ public class RandomMemoryActivity extends AppCompatActivity {
         memoryTextView = (TextView) findViewById(R.id.memory_text_view);
 
 
-        // mem = [from firebase]
+        // Get a reference to our memories
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("Memories");
 
-        // https://yesterdaze-657f2.firebaseio.com/
-
-
-//        dateTextView.setText(mem.getDate());
-//        memoryTextView.setText(mem.getText());
+        // Attach a listener to read the data at our memories reference
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Integer count = 0;
+                for (DataSnapshot memSnapshot: dataSnapshot.getChildren()) {
+                    Memory mem = memSnapshot.getValue(Memory.class);
+                    memList.add(mem);
+                    count += 1;
+                }
+                Random random = new Random();
+                Memory randomMem = memList.get(random.nextInt(count));
+                dateTextView.setText(randomMem.getDate());
+                memoryTextView.setText(randomMem.getText());
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+            }
+        });
     }
-
 }
