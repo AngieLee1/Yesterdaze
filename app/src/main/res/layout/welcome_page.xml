@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center">
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/nameTextView"
@@ -10,8 +12,8 @@
         android:layout_height="wrap_content"
         android:text="Welcome!"
         android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textSize="36sp"
+        android:textColor="#333366"/>
 
     <Button
         android:id="@+id/create_mem_button"
@@ -19,15 +21,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
         android:text="create memory"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:background="@drawable/shape"/>
 
     <Button
         android:id="@+id/show_mem_button"
         android:layout_width="200sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
-        android:fontFamily="@font/quicksand"
         android:text="make me smile"
         android:textAllCaps="false"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:background="@drawable/shape"/>
 </LinearLayout>

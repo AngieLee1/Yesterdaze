@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_marginTop="20sp"
+    android:layout_marginBottom="20sp"
+    android:layout_marginLeft="20sp"
+    android:layout_marginRight="20sp"
+    android:background="@drawable/background">
 
     <TextView
         android:id="@+id/textView2"
@@ -53,13 +58,14 @@
 
     <RatingBar
         android:id="@+id/memoryRating"
-        android:layout_width="match_parent"
+        android:layout_width="245dp"
         android:layout_height="wrap_content"
-        android:numStars="8" />
+        android:layout_gravity="center"
+        android:numStars="5" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="119dp" />
+        android:layout_height="90dp" />
 
     <Button
         android:id="@+id/addButton"
