@@ -65,7 +65,7 @@ public class CreateMemoryActivity extends AppCompatActivity {
 //                int year = c.get(Calendar.YEAR);
 //                String dateStr = day + "-" + month + "-" + year;
 
-                int memoryRating = memRating.getNumStars();
+                int memoryRating = (int)memRating.getRating();
 
                 String datevalue = memDate.getText().toString();
 
