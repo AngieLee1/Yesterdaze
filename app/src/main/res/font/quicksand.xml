@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/Quicksand_Bold" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/Quicksand_Bold_Oblique" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/Quicksand_Book" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/Quicksand_Book_Oblique" />
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        android:font="@font/Quicksand_Light" />
+</font-family>
