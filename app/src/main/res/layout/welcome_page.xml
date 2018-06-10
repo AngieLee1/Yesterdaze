@@ -20,7 +20,7 @@
         android:layout_width="200sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50sp"
-        android:text="create memory"
+        android:text="add memory"
         android:textAllCaps="false"
         android:textSize="24sp"
         android:background="@drawable/shape"/>
