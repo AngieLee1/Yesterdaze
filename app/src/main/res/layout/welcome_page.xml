@@ -8,22 +8,26 @@
         android:id="@+id/nameTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome, "
+        android:text="Welcome!"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"/>
 
     <Button
         android:id="@+id/create_mem_button"
-        android:layout_width="wrap_content"
+        android:layout_width="200sp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
         android:text="create memory"
-        android:layout_marginTop="50sp"/>
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/show_mem_button"
-        android:layout_width="wrap_content"
+        android:layout_width="200sp"
         android:layout_height="wrap_content"
-        android:text="remind"
-        android:layout_marginTop="20sp"/>
+        android:layout_marginTop="20sp"
+        android:fontFamily="sans-serif"
+        android:text="make me smile"
+        android:textAllCaps="false"
+        android:textSize="24sp" />
 </LinearLayout>

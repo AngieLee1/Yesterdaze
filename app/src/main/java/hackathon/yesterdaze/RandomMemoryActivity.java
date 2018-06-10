@@ -20,7 +20,7 @@ public class RandomMemoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcome_page);
+        setContentView(R.layout.remind_page);
 
         dateTextView = (TextView) findViewById(R.id.date_text_view);
         memoryTextView = (TextView) findViewById(R.id.memory_text_view);
