@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "125488317469-ovlp5g2nro07t717gae0balnq4r7kkd6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hackathon.yesterdaze",
+            "certificate_hash": "1da8a51857c7725c55826ef6a8c01e713c196cba"
+          }
+        },
+        {
           "client_id": "125488317469-7d21r2e7gtdh1v9p06ruo183a1chkreo.apps.googleusercontent.com",
           "client_type": 3
         },
@@ -33,8 +41,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125488317469-7d21r2e7gtdh1v9p06ruo183a1chkreo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

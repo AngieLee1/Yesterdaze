@@ -13,6 +13,9 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -68,9 +71,7 @@ public class CreateMemoryActivity extends AppCompatActivity {
 
                 Memory newMem = new Memory(memoryText, datevalue, memoryRating);
 
-
-                //addToDatabase();
-
+                addToDatabase(newMem);
 
                 showSuccessMsg();
 
@@ -81,7 +82,13 @@ public class CreateMemoryActivity extends AppCompatActivity {
     }
 
 
-    public void addToDatabase(String memId, Memory newMem) {
+    public void addToDatabase(Memory newMem) {
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("Memories");
+
+        myRef.setValue(newMem);
+
 //        private DatabaseReference mDatabase;
 //        mDatabase = FirebaseDatabase.getInstance().getReference();
 //        final FirebaseDatabase database = FirebaseDatabase.getInstance();
